@@ -15,7 +15,7 @@ export default class DateTimeField extends Component {
     mode: Constants.MODE_DATETIME,
     zIndex: 999,
     onChange: (x) => {
-      console.log(x);
+      console.warn(x);
     }
   }
 

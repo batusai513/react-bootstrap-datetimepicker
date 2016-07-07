@@ -3,9 +3,10 @@ import TestUtils from "react-addons-test-utils";
 import Constants from "../Constants.js";
 
 jest.dontMock("../DateTimePickerHours.js");
+jest.dontMock("classnames");
 
 describe("DateTimePickerHours", function() {
-  const DateTimePickerHours = require("../DateTimePickerHours.js");
+  const DateTimePickerHours = require("../DateTimePickerHours.js").default;
   let hours, onSwitchMock, setSelectedHourMock;
 
 

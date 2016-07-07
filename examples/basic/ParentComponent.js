@@ -13,7 +13,6 @@ class ParentComponent extends Component {
   }
 
   handleChange = (newDate) => {
-    console.log("newDate", newDate);
     return this.setState({date: newDate});
   }
 

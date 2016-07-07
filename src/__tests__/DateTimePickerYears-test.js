@@ -3,13 +3,15 @@ import TestUtils from "react-addons-test-utils";
 
 jest.dontMock("../DateTimePickerYears.js");
 jest.dontMock("moment");
+jest.dontMock("classnames");
 
 describe("DateTimePickerYears", function() {
   const moment = require("moment");
-  const DateTimePickerYears = require("../DateTimePickerYears.js");
+  var DateTimePickerYears;
   let subtractDecadeMock, addDecadeMock, setViewYearMock, years;
 
   beforeEach(() => {
+    DateTimePickerYears = require("../DateTimePickerYears.js").default;
     subtractDecadeMock = jest.genMockFunction();
     addDecadeMock = jest.genMockFunction();
     setViewYearMock = jest.genMockFunction();
