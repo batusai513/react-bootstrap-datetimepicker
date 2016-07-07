@@ -11,7 +11,6 @@ describe("DateTimeField", function() {
   const happyDate = moment("1990-06-05 07:30");
   let createParent, TestParent;
 
-
   describe("By default", function() {
 
    it("shows the right date for a given dateTime and inputFormat", function() {
